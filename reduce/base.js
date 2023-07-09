@@ -16,18 +16,13 @@ module.exports = {
         { id: 5, nome: 'leite',      valor: 7.20,  categoria: 'alimento'},
     ],
     contas: [
-        {"id": 1, "descricao": "Energia", "valor": 200, "mes": "janeiro"},
-        {"id": 2, "descricao": "agua", "valor": 300, "mes": "janeiro"},
-        {"id": 3, "descricao": "internet", "valor": 100, "mes": "janeiro"},
-
-        {
-            "id": 4, 
-            "descricao": "Energia", 
-            "valor": 300, 
-            "mes": "fevereiro"
-        },
-        {"id": 5, "descricao": "agua", "valor": 800, "mes": "fevereiro"},
-        {"id": 6, "descricao": "internet", "valor": 1000, "mes": "fevereiro"},
-    ]
+        {"id": 1, "descricao": "Paulo",     "valor": 1700,  "mes": "janeiro"},
+        {"id": 2, "descricao": "Diomar",    "valor": 3900,  "mes": "janeiro"},
+        {"id": 3, "descricao": "Dora",      "valor": 3000,  "mes": "janeiro"},
+        {"id": 4, "descricao": "Pai",       "valor":  400,   "mes": "janeiro"},
+        {"id": 5, "descricao": "Consorcio", "valor": 400,    "mes": "janeiro"},
+        {"id": 6, "descricao": "Diogo",     "valor": 700,    "mes": "janeiro"},
+        {"id": 7, "descricao": "Mayke",     "valor": 1200,  "mes": "janeiro"},
+    ],
     
 }

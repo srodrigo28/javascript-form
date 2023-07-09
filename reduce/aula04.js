@@ -1,7 +1,7 @@
 /** Filtro com validação */
 const data = require('./base')
 
-let filtroMes = "janeiro1"
+let filtroMes = "janeiro"
 //let filtroMes = "fevereiro"
 
 function filtro1(){
@@ -12,7 +12,7 @@ function filtro1(){
 
         let total = filtro.reduce((acc, total) => acc + total)
 
-        return console.log("Soma do mês: " + filtroMes + "R$ " + total)
+        return console.log("Soma das contas mês: " + filtroMes + ": R$ " + total)
     }catch(error){
         console.log("Erro na consulta")
     }
