@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: red;
+}
+.main{
+    padding: 50px;
+    margin-top: 50px;
+    max-height: 50vh;
+    overflow-y: scroll;
+
+    color: #000;
+    background-color: darkviolet;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main::-webkit-scrollbar{
+    width: 0px;
+    background-color: yellow;
+}
