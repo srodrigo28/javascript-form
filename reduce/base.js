@@ -14,6 +14,20 @@ module.exports = {
         { id: 3, nome: 'pão',        valor: 2.00,  categoria: 'alimento'},
         { id: 4, nome: 'queijo',     valor: 20.50, categoria: 'alimento'},
         { id: 5, nome: 'leite',      valor: 7.20,  categoria: 'alimento'},
+    ],
+    contas: [
+        {"id": 1, "descricao": "Energia", "valor": 200, "mes": "janeiro"},
+        {"id": 2, "descricao": "agua", "valor": 300, "mes": "janeiro"},
+        {"id": 3, "descricao": "internet", "valor": 100, "mes": "janeiro"},
+
+        {
+            "id": 4, 
+            "descricao": "Energia", 
+            "valor": 300, 
+            "mes": "fevereiro"
+        },
+        {"id": 5, "descricao": "agua", "valor": 800, "mes": "fevereiro"},
+        {"id": 6, "descricao": "internet", "valor": 1000, "mes": "fevereiro"},
     ]
     
 }
