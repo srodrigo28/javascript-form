@@ -1,0 +1,39 @@
+body{
+    background-color: #000;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    color: #fff;
+    text-align: center;
+}
+section{
+    gap: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: darkviolet;
+}
+.form{
+    display: flex;
+    align-items: center;
+}
+.div p{
+    color:#000;
+}
+.rs{
+    margin-left: 50px;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+
+    /* display: none; */
+}

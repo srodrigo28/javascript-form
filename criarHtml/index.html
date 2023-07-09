@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Cria Html</title>
+</head>
+
+<body>
+    <button onclick="adicionaSeletor()">Adiciona</button>
+    <button onclick="removeSeletor()">Remove</button>
+    <h1 id="adiciona-css">Criando html atraves javascript</h1>
+</body>
+
+<style>
+    .box-show{
+        display: block;
+        color: #fff;
+        background-color: #000;
+    }
+    .box-none{
+        display: block;
+        color:  #000;
+        background-color: #fff;
+    }
+</style>
+
+<script>
+    var adiciona = document.getElementById("adiciona-css")
+
+    function adicionaSeletor(){
+        adiciona.classList.add("box-show")    
+    }
+    function removeSeletor(){
+        adiciona.classList.add("box-none")    
+    }
+</script>
+</html>

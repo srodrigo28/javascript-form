@@ -1,0 +1,20 @@
+body{
+    background-color: #000;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    color: #fff;
+    text-align: center;
+}
+section{
+    gap: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: darkviolet;
+}
