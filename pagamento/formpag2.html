@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Pague</title>
+</head>
+<body>
+    <h1>Pagamento</h1>
+
+    <form>
+        <input type="text" placeholder="nome do funcionario"    id="nome" />
+        <input type="text" placeholder="salário do funcionario" id="salario" />
+        <input type="text" placeholder="inss" id="inss" />
+        <input type="text" placeholder="fgts" id="fgts" />
+
+        <p>Resultado do calculo: <span id="rs"></span> </p>
+        <button>Calcular</button>
+
+    </form>
+
+    <script>
+
+        var salario = Number(document.querySelector('#salario').value)
+        var inssInput = Number(document.querySelector('#inss').value)
+        var fgtsInput = Number(document.querySelector('#fgts').value)
+
+        var inss = (salario * inssInput) / 100
+        var fgts = (salario * fgtsInput) / 100
+        
+        var salario_liquido = salario - ( inss + fgts )
+
+        const cadastrar = document.querySelector("button")
+        cadastrar.addEventListener("click", calcular, false);
+
+        function validar(e){
+            e.preventDefault()
+
+            console.log(salario)
+            console.log(inss)
+            console.log(fgts)
+            console.log("===============================================")
+        }
+        
+        function calcular(e){
+            e.preventDefault()
+
+            console.log("Salário R$ " + salario.toFixed(2))
+            console.log("Inss: R$ " + inss.toFixed(2))
+            console.log("Fgts: R$ " + fgts.toFixed(2))
+            console.log("Salário Liquido: R$ " + salario_liquido.toFixed(2))
+        }
+    </script>
+</body>
+</html>
