@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Uber</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="valor da corrida" id="recebido" value="22" />
+        <input type="text" placeholder="valor recebido" id="motorista" value="15" />
+        <button>Calcular</button>
+
+        <div class="rs">
+            <p>Percentual recebido pelo o motorista: <span id="motoristaPercentual"></span></p>
+            <p>Percentual recebido pela a plataforma: <span id="plataformaPercentual"></span></p>
+        </div>
+    </form>
+
+    <script>
+        var recebido = Number( document.querySelector('#recebido').value )
+        var motorista = Number( document.querySelector('#motorista').value )
+
+        var mot = document.querySelector('#motoristaPercentual')
+        var plat = document.querySelector('#plataformaPercentual')
+
+        var plataforma = (recebido - motorista)
+
+        // const cadastrar = document.querySelector("button")
+        // cadastrar.addEventListener("click", validar1, false);
+
+        var f1 = document.querySelector("button")
+        f1.addEventListener("click", calcular, false)
+
+
+        function calcular(event){
+            event.preventDefault()
+
+            var motoristaPercentual = ( motorista / recebido ) * 100
+            var plataformaPercentual = (plataforma / recebido) * 100 
+
+            mot.innerHTML = motoristaPercentual.toFixed(2) + "%"
+            plat.innerHTML = plataformaPercentual.toFixed(2) + "%"
+
+            // console.log("Motorista recebel: " + motoristaPercentual.toFixed(2)  + "%")
+            // console.log("Plataforma recebel: " + plataformaPercentual.toFixed(2) + "%")
+        
+        }
+
+        // console.log("Valor da corrida total: R$ " + recebido + "\n")
+
+        // console.log("Motorista recebel: " + motoristaPercentual.toFixed(2) + "%")
+        // console.log("Plataforma recebel: " + plataformaPercentual.toFixed(2) + "%")
+
+    </script>
+</body>
+</html>

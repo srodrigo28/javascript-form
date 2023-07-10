@@ -1,0 +1,53 @@
+body{
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+form{
+    height: 100vh;
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+form input{ 
+    width: 115px;
+    padding: 10px;
+    background-color: red;
+
+    text-align: center;
+
+    border: none;
+    outline: none;
+}
+.button-group{
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.success{
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    background-color: blueviolet;
+}
+.danger{
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    background-color: blueviolet;
+}
