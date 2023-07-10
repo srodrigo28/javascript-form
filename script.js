@@ -17,19 +17,17 @@ f1.addEventListener("click", calcular, false)
 
 function calcular(event){
     event.preventDefault()
-    if ( r == "" || m == "" ) {
-        alert("Preencher todos campos!")
-    } else {
-        var motoristaPercentual = ( motorista / recebido ) * 100
-        var plataformaPercentual = (plataforma / recebido) * 100 
 
-        motoristaRec = 'R$ ' + motorista.toFixed(2) + ' - Percentual: ' + motoristaPercentual.toFixed(1) + '%'
-        plataformaRec = 'R$ ' + plataforma.toFixed(2) + ' - Percentual: ' + plataformaPercentual.toFixed(1) + '%'
+    var motoristaPercentual = ( motorista / recebido ) * 100
+    var plataformaPercentual = (plataforma / recebido) * 100 
 
-        mot.innerHTML = motoristaRec
-        plat.innerHTML = plataformaRec
+    motoristaRec = 'R$ ' + motorista.toFixed(2) + ' - Percentual: ' + motoristaPercentual.toFixed(1) + '%'
+    plataformaRec = 'R$ ' + plataforma.toFixed(2) + ' - Percentual: ' + plataformaPercentual.toFixed(1) + '%'
 
-        console.log(motoristaPercentual)
-        console.log(plataformaPercentual)
-    }
+    mot.innerHTML = motoristaRec
+    plat.innerHTML = plataformaRec
+
+    console.log(motoristaPercentual)
+    console.log(plataformaPercentual)
+    
 }
