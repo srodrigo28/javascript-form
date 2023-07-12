@@ -1,6 +1,6 @@
 
-var r = document.querySelector('#recebido').value
-var m = document.querySelector('#motorista').value
+var r = document.querySelector('#recebido')
+var m = document.querySelector('#motorista')
 
 recebido = parseFloat(r.replace(",", "."))
 motorista = parseFloat(m.replace(",", "."))

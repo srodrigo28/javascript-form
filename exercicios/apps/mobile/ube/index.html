@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Plataforma 2.0</title>
+</head>
+<body>
+    <form>
+        <div class="input-grup">
+            <input type="text" placeholder="Valor da Corrida" id="inputCorrida">
+            <input type="text" placeholder="Valor Recebido" id="inputRecebido">
+        </div>
+        <div class="button-grup">
+            <button>Calcular</button>
+            <button type="reset">Resetar</button>
+        </div>
+        <div class="resultado">
+            <p> Percentual recebido pelo o motorista:  <span id="motoristaPercentual" class="success"></span> </p>
+            <p> Percentual recebido pela a plataforma: <span id="plataformaPercentual" class="danger"></span>  </p>
+        </div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
