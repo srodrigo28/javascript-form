@@ -18,8 +18,10 @@ function calcular(event) {
     let motoristaPercentual = ( motorista / recebido ) * 100
     let plataformaPercentual = ( plataforma / recebido ) * 100
 
-    motoristaRec = ( 'R$ ' + motorista.toFixed(2) + ' Percentual: ' + motoristaPercentual.toFixed(1) + '%' )
-    plataformaRec = ( 'R$ ' + plataforma.toFixed(2) + ' Percentual: ' + plataformaPercentual.toFixed(1) + '%' )
+    motoristaRec = ('R$ ' + motorista.toFixed(2) + ' Percentual: '
+        + motoristaPercentual.toFixed(1) + '%')
+    plataformaRec = ('R$ ' + plataforma.toFixed(2) + ' Percentual: '
+        + plataformaPercentual.toFixed(1) + '%')
 
     mot.innerHTML = motoristaRec
     plat.innerHTML = plataformaRec

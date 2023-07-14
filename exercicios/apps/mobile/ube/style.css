@@ -32,7 +32,7 @@ form{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 5px 5px 5px darkviolet;
+    box-shadow: 10px 10px 10px #4CAF50;
 
     background-color: #4CAF50;
     border-radius: 10px 0 10px;
