@@ -1,0 +1,109 @@
+body{
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+header{
+    height: 40px;
+    padding: 10px;
+
+    display: flex;
+    text-align: center;
+    margin-bottom: 15px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 0 10px;
+    background-color: darkviolet;
+}
+h2{
+    background-color: transparent;
+}
+form{
+    min-height: 60vh;
+    max-height: 60vh;
+    max-width: 280px;
+    min-width: 280px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 5px darkviolet;
+
+    background-color: #4CAF50;
+    border-radius: 10px 0 10px;
+}
+.label-group{
+    height: 10px;
+    width: 280px;
+    margin-left: 25px;
+}
+.label-group label:nth-child(1n+2){
+    margin-left: 48px;
+}
+
+label{
+    font-size: 12px;
+    
+}
+form input{
+    color: #fff;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    background-color: blueviolet;
+    box-shadow: 2px 2px 2px black;
+
+
+    text-align: center;
+
+    border: none;
+    outline: none;
+}
+.button-group{
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 7px;
+    font-size: 17px;
+    box-shadow: 2px 2px 2px black;
+    background-color: darkviolet;
+}
+span{
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.success{
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    background-color: blueviolet;
+    box-shadow: 2px 2px 2px black;
+}
+.danger{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: red;
+    box-shadow: 2px 2px 2px black;
+}
